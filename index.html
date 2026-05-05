@@ -315,6 +315,26 @@
   }
   footer span { font-family: var(--mono); font-size: 11px; color: var(--text3); }
 
+  .project-card.coming-soon {
+    opacity: 0.45;
+    background: var(--bg);
+  }
+  .project-card.coming-soon:hover {
+    opacity: 0.65;
+    background: var(--bg2);
+  }
+  .project-card.coming-soon::before { display: none; }
+  .coming-badge {
+    display: inline-block;
+    font-family: var(--mono); font-size: 10px;
+    letter-spacing: 0.12em; text-transform: uppercase;
+    color: var(--amber);
+    border: 0.5px dashed var(--amber-dim);
+    padding: 4px 12px;
+    background: var(--amber-faint);
+    margin-top: 0.5rem;
+  }
+
   @media (max-width: 600px) {
     nav { padding: 0 1.25rem; }
     .nav-links { display: none; }
@@ -490,6 +510,24 @@
       <a class="card-link" href="https://github.com/eyyuen/esg-kpi-pipeline" target="_blank">View on GitHub</a>
     </div>
 
+    <div class="project-card coming-soon">
+      <div class="card-eyebrow">MCP · ESG Data Engineering</div>
+      <h3 class="card-title">ESG Extraction Pipeline V2</h3>
+      <p class="card-desc">
+        A rebuilt version of the ESG KPI extraction pipeline with MCP integration — enabling richer tool use, smarter document routing, and deeper structured output from sustainability reports.
+      </p>
+      <div class="coming-badge">In progress</div>
+    </div>
+
+    <div class="project-card coming-soon">
+      <div class="card-eyebrow">Coming soon</div>
+      <h3 class="card-title">Next Project</h3>
+      <p class="card-desc">
+        More automation and AI tooling projects in the pipeline. This space gets updated regularly — check back or follow on GitHub.
+      </p>
+      <a class="card-link" href="https://github.com/eyyuen" target="_blank">Follow on GitHub</a>
+    </div>
+
   </div>
 </section>
 
@@ -600,7 +638,7 @@
   <p class="contact-sub">Open to AI automation, workflow engineering, and process automation roles in Singapore.</p>
   <div class="contact-links">
     <a class="contact-link" href="https://github.com/eyyuen" target="_blank">GitHub</a>
-    <a class="contact-link" href="https://linkedin.com/in/yuenweilingsg" target="_blank">LinkedIn</a>
+    <a class="contact-link" href="https://www.linkedin.com/in/wei-ling-y-73b88122a/" target="_blank">LinkedIn</a>
     <a class="contact-link" href="mailto:ey.yuenwei@gmail.com">Email</a>
   </div>
 </section>
